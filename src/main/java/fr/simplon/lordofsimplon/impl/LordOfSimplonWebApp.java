@@ -35,6 +35,7 @@ public class LordOfSimplonWebApp
         // Ajout de tous les "endpoints" (par défaut le serveur n'acceptera aucune requête donc
         // tous les fichiers susceptibles d'être demandés par le navigateur doivent être ajoutés ici)
         server.addEndpoint(new Endpoint("/", returnIndexHtml));
+        server.addEndpoint(new Endpoint("/fight.html", returnIndexHtml));
         server.addEndpoint(new Endpoint("/index.html", returnIndexHtml));
         server.addEndpoint(new Endpoint("/favicon.ico", returnSameAsRequested));
         server.addEndpoint(new Endpoint("/styles.css", returnSameAsRequested));

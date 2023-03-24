@@ -37,7 +37,7 @@ public class InsertInitialDataSet
         Persistence.generateSchema("lordofsimplon", p);
 
         // Création de la factory permettant d'obtenir les EntityManagers JPA
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("lord-of-simplon", p);
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("lordofsimplon", p);
 
         // Création de l'EntityManager
         try (EntityManager entityManager = factory.createEntityManager();)
